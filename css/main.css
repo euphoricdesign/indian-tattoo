@@ -16,9 +16,11 @@
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: rgb(0, 0, 0);
+    background-image: url("https://i.pinimg.com/originals/97/e9/4d/97e94d340c2cd2504c6e25b74fb3dd8a.gif");
+    background-size: cover;
+    padding: 0;
+    margin: 0;
 }
-
 
 
 .header-content {
