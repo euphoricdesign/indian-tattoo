@@ -1,146 +1,91 @@
 
-.header {
-    height: 100vh;
-    display: flex;
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.content {
-    max-width: 49rem;
-    padding: 0 1rem;
-}
-
-.header-video {
-    position: absolute;
-    top: 0;
-    left: 0;
+header {
     width: 100%;
     height: 100vh;
+    position: relative;
     overflow: hidden;
-    background-image: url("https://i.pinimg.com/originals/97/e9/4d/97e94d340c2cd2504c6e25b74fb3dd8a.gif");
-    background-size: cover;
-    padding: 0;
-    margin: 0;
 }
 
+.absolute {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.header-content {
-    z-index: 1;
+.primer-titulo {
+    font-size: 80px;
+    font-weight: 900;
+    z-index: 100;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.primer-titulo::after {
+    display: block;
+    width: 30%;
+    height: 10px;
+    content: "";
+    margin: auto;
+    background: #fff;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(5, 5, 5, 0.418);
 }
 
 .fondo-traslucido {
-    background-color: rgba(100, 100, 100, 0.1);
+    background-color: white;
     margin-bottom: 3.125rem;
+    min-width: 100%;
+    background-size: contain;
+}
+
+.fondo-traslucido-2 {
+    background-color: black;
+    margin-bottom: 3.125rem;
+    min-width: 100%;
+    background-size: contain;
 }
 
 .carousel {
     min-height: 500px;
-    margin-top: 200px;
+    margin: 2.5rem 0;
 }
 
-.carousel .carousel-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    width: 500px;
-    height: 500px;
-}
-
-.carousel .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 20px;
-}
-
-.carousel .indicators .indicator-item {
-    border-radius: 0;
-    transform: rotate(45deg);
-    margin: 0 15px;
-    background: black;
-}
 
 .navbar-brand {
     background-color: black;
 }
 
-.hover {
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 60%;
+.img-bg {
+    background-image: url(../img/fondo2.jpg);
+    background-size: auto;
 }
 
-.hover-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    transition: all 0.4s;
+footer {
+    background-color: black;
 }
 
-.hover img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: all 0.3s;
-}
-
-.hover-content {
-    position: relative;
-    z-index: 99;
-}
-
-
-/* DEMO 1 ============================== */
-.hover-1 img {
-    width: 105%;
-    position: absolute;
-    top: 0;
-    left: -5%;
-    transition: all 0.3s;
-}
-
-.hover-1-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 99;
-    transition: all 0.4s;
-}
-
-.hover-1 .hover-overlay {
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.hover-1-description {
-    transform: translateY(0.5rem);
-    transition: all 0.4s;
-    opacity: 0;
-}
-
-.hover-1:hover .hover-1-content {
-    bottom: 2rem;
-}
-
-.hover-1:hover .hover-1-description {
-    opacity: 1;
-    transform: none;
-}
-
-.hover-1:hover img {
-    left: 0;
-}
-
-.hover-1:hover .hover-overlay {
-    opacity: 0;
+#contacto iframe {
+    filter: grayscale(1);
 }
 
 body {
