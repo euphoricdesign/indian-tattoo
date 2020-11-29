@@ -1,4 +1,6 @@
 
+
+
 html,body
 {
     width: 100%;
@@ -6,6 +8,7 @@ html,body
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans Condensed', sans-serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -13,6 +16,16 @@ header {
     height: 100vh;
     position: relative;
     overflow: hidden;
+}
+
+.bloque {
+    width: 315px;
+    height: 315px;
+    background:black;
+    position: absolute;
+    z-index: 1;
+    left: 630px;
+    top: 4280px;
 }
 
 .absolute {
@@ -70,7 +83,6 @@ header {
     margin: 2.5rem 0;
 }
 
-
 .navbar-brand {
     background-color: black;
 }
@@ -78,6 +90,45 @@ header {
 .img-bg {
     background-image: url(../img/fondo2.jpg);
     background-size: auto;
+}
+
+.icon {
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    right: 268px;
+}
+
+.icon-2 {
+    color: white;
+    position: absolute;
+    right: 268px;
+    bottom: auto;
+}
+
+
+
+#contacto .info ul {
+    color: white;
+    list-style: none;
+    position: relative;
+    padding: 13px 0 13px 50px;;
+}
+
+#contacto .info ul li {
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+#contacto .info ul li .fact {
+    position: relative;
+    top: 6px;
+}
+
+#contacto .info ul li .fact .information{
+    text-decoration: none;
+    color: white;
 }
 
 footer {
