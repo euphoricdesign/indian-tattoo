@@ -9,6 +9,7 @@ html,body
     padding: 0px;
     font-family: 'Open Sans Condensed', sans-serif;
     box-sizing: border-box;
+    color: black;
 }
 
 header {
@@ -18,14 +19,72 @@ header {
     overflow: hidden;
 }
 
-.bloque {
-    width: 315px;
-    height: 315px;
-    background:black;
+/********************sidebar********************/
+.content{
+    height: 120px;
+    background: transparent;
+    display: flex;
+    padding: 0 20px;
     position: absolute;
-    z-index: 1;
-    left: 630px;
-    top: 4280px;
+
+    z-index: 10;
+}
+
+.menu-toggle{
+    display: none;
+    margin-left: auto;
+    color: #fff;
+    line-height: 120px; /*alinea el texto verticalmente*/
+    font-size: 25px;
+    cursor: pointer;
+    right: 20px;
+}
+
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#menu{
+    position: relative;
+    left: 440px;
+}
+
+#menu .ul-navbar li{
+    display: inline-block;
+}
+
+#menu .ul-navbar li a{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    line-height: 120px;
+    padding: 0 8px;
+    text-transform: uppercase;
+    transition: .2s;
+}
+
+#menu .ul-navbar li a:hover{
+    background: #7272e0;
+}
+
+.show {
+    height: 305px !important;
+}
+/***********************sidebar end*********************************/
+
+.bloque {
+    width: 350px;
+    padding: 25px;
+    position: relative;
+    background:black;
+    left: 500px;
+    top: 110px;
 }
 
 .absolute {
@@ -83,6 +142,11 @@ header {
     margin: 2.5rem 0;
 }
 
+.contact-wrapper {
+    position: absolute;
+    z-index: 10;
+}
+
 .navbar-brand {
     background-color: black;
 }
@@ -106,7 +170,130 @@ header {
     bottom: auto;
 }
 
+/************************accordion************************/
+.accordion {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 90px 0;
+    background: #fefffa;
+    padding: 0 30px;
+}
 
+.question-accordion {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+    background: #fefffa;
+    color: #646464;
+    margin: 0;
+    cursor: pointer;
+}
+
+.paragraph-accordion {
+    max-height: 800px;
+    margin-top: 14px;
+    color: rgba(48, 69, 92, 0.8);
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    transform: translate(0, 0);
+    z-index: 2;
+}
+
+.question-box {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.question-box li {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 4px;
+    padding-top: 18px;
+    border-top: 1px dotted #dce7eb;
+}
+
+.question-box li:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+.question-box li:nth-of-type(2) {
+    animation-delay: 0.75s;
+}
+
+.question-box li:nth-of-type(3) {
+    animation-delay: 1s;
+}
+
+.question-box li:nth-of-type {
+    padding-bottom: 0;
+}
+
+.question-box li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 0;
+}
+
+.question-box li i::before,
+.question-box li i::after {
+    content: "";
+    position: absolute;
+    background: #444444;
+    width: 3px;
+    height: 9px;
+}
+
+.question-box li i::before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+.question-box li i::after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+.paragraph-accordion,
+.question-box li i::before,
+.question-box li i::after {
+    transition: all 0.25s ease-in-out;
+}
+
+.question-box li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+}
+
+.question-box li input[type=checkbox]:checked ~ p {
+    margin-top: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+}
+
+.question-box li input[type=checkbox]:checked ~ i::before{
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+.question-box li input[type=checkbox]:checked ~ i::after{
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+/***************accordion end*********************/
 
 #contacto .info ul {
     color: white;
@@ -142,4 +329,257 @@ footer {
 body {
     min-height: 100vh;
     background-color: #fafafa;
+}
+
+@media screen and (max-width:2560px) {
+    .bloque {
+        width: 350px;
+        padding: 25px;
+        position: relative;
+        background: black;
+        left: 720px;
+        top: 110px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .bloque {
+        width: 350px;
+        padding: 25px;
+        position: relative;
+        background: black;
+        left: 700px;
+        top: 110px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .bloque {
+        width: 350px;
+        padding: 25px;
+        position: relative;
+        background: black;
+        left: 500px;
+        top: 110px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .contact-wrapper {
+        position: relative;
+    }
+
+    .bloque {
+        width: 100%;
+        padding: 25px;
+        background: black;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .icon-mobile {
+        position: relative;
+        right: 340px;
+    }
+
+    .text-mobile {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:700px){
+    .menu-toggle{
+        display: block;
+        margin-left: 320px;
+    }
+
+    #menu{
+        background: #000000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        /*border: 1px solid #eee;*/
+        overflow: hidden;
+        transition: .3s ease-out;
+    }
+
+    #menu .ul-navbar li{
+        display: block;
+        text-align: center;
+    }
+
+    #menu .ul-navbar li a{
+        color: #fff;
+        font-size: 20px;
+        border-bottom: 1px solid #515151;;
+        width: 100%;
+        line-height: 75px;
+    }
+
+    #menu .ul-navbar li a:hover{
+        background: #5959b8;
+    }
+    
+
+    .container{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .menu-toggle{
+        display: block;
+        margin-left: 280px;
+    }
+
+    .primer-titulo {
+        font-size: 45px;
+    }
+
+    .primer-titulo::after {
+        display: none;
+    }
+
+    .contact-wrapper {
+        position: relative;
+    }
+
+    .bloque {
+        width: 345px;
+        padding: 25px;
+        background: black;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .icon-mobile {
+        position: relative;
+        right: 43px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .carousel {
+        position: relative;
+    }
+
+    .paragraph-carousel {
+        position: absolute;
+        bottom: 16px;
+        right: 5px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .menu-toggle{
+        display: block;
+        margin-left: 210px;
+    }
+
+    .bloque {
+        width: 395px;
+        padding: 25px;
+        background: black;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .question-box li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        left: 125px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .bloque {
+        width: 379px;
+        padding: 25px;
+        background: black;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .menu-toggle{
+        display: block;
+        margin-left: 150px;
+    }
+
+    .bloque {
+        width: 100%;
+    }
+
+    .icon-mobile {
+        position: relative;
+        left: 10px;
+    }
+
+    .question-box li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        left: 145px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .menu-toggle{
+        display: block;
+        margin-left: 120px;
+    }
+    
+    .contact-wrapper {
+        position: relative;
+    }
+
+    .bloque {
+        width: 290px;
+        padding: 25px;
+        background: black;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .icon-mobile {
+        position: relative;
+        left: 60px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .carousel {
+        position: relative;
+    }
+
+    .paragraph-carousel {
+        position: absolute;
+        bottom: 16px;
+        right: 5px;
+    }
+
+    .question-box li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        left: 140px;
+    }
 }
