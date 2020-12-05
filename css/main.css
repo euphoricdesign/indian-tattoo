@@ -40,15 +40,6 @@ header {
     right: 20px;
 }
 
-.logo a{
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 60px;
-    text-transform: uppercase;
-    font-family: 'Press Start 2P', cursive;
-}
-
 #menu{
     position: relative;
     left: 440px;
@@ -70,7 +61,8 @@ header {
 }
 
 #menu .ul-navbar li a:hover{
-    background: #7272e0;
+    transform: scale(1.2);
+    color: rgb(228, 228, 228);
 }
 
 .show {
@@ -453,6 +445,17 @@ body {
     }
 }
 
+@media screen and (max-width:640px) {
+    .primer-titulo {
+        font-size: 40px;
+    }
+
+    .icon-mobile {
+        position: relative;
+        right: 170px;
+    }
+}
+
 @media screen and (max-width:500px) {
     .menu-toggle{
         display: block;
@@ -500,6 +503,19 @@ body {
     }
 }
 
+@media screen and (max-width:480px) {
+    .bloque {
+        width: 459px;
+    }
+    
+    .icon-mobile {
+        position: relative;
+        right: 105px;
+    }
+
+
+}
+
 @media screen and (max-width:425px) {
     .menu-toggle{
         display: block;
@@ -534,6 +550,52 @@ body {
     }
 }
 
+@media screen and (max-width:412px) {
+    .menu-toggle {
+        display: block;
+        margin-left: 195px;
+    }
+
+    .question-box li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        left: 126px;
+    }
+
+    .icon-mobile {
+        position: relative;
+        right: 51px;
+    }
+
+    .bloque {
+        width: 392px;
+    }    
+}
+
+@media screen and (max-width:384px) {
+    .menu-toggle {
+        display: block;
+        margin-left: 185px;
+    }
+
+    .question-box li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        left: 115px;
+    }
+
+    .bloque {
+        width: 364px;
+    }
+    
+    .icon-mobile {
+        position: relative;
+        right: 25px;
+    }
+}
+
 @media screen and (max-width:375px) {
     .menu-toggle{
         display: block;
@@ -556,6 +618,19 @@ body {
         left: 111px;
     }
 
+}
+
+@media screen and (max-width:360px) {
+    .bloque {
+        width: 339px;
+    }
+
+    .question-box li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        left: 106px;
+    }
 }
 
 @media screen and (max-width:320px) {
@@ -601,5 +676,28 @@ body {
         transform: translate(-6px, 0);
         margin-top: 16px;
         left: 140px;
+    }
+}
+
+@media screen and (max-width: 280px){ 
+    .menu-toggle {
+        display: block;
+        margin-left: 80px;
+    }
+
+    .bloque {
+        width: 259px;
+    }    
+
+    .icon-mobile {
+        position: relative;
+        left: 80px;
+    }
+
+    .question-box li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        left: 170px;
     }
 }
