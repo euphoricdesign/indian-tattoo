@@ -19,6 +19,17 @@ header {
     overflow: hidden;
 }
 
+#artistas .artistas {
+    border-radius: 2px;
+}
+
+#artistas .artistas:hover {
+    border: 2px solid transparent;
+}
+
+/*#estudio .carousel-img {
+    filter: grayscale(1);
+}*/
 /********************sidebar********************/
 .content{
     height: 120px;
@@ -287,6 +298,70 @@ header {
 
 /***************accordion end*********************/
 
+/****gotop****/
+.go-top-container {
+    position: fixed;
+    bottom: 40px;
+    left: 988px;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+}
+
+.go-top-button {
+    width: 0;
+    height: 0;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.go-top-button i {
+    position: absolute;
+    font-size: 20px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: rgb(155, 155, 155)4, 93, 93);
+    transition: .2s;
+}
+
+.show2 {
+    z-index: 10;
+}
+
+.show2 .go-top-button {
+    animation: popup .3s ease-in-out;
+    width: 50px;
+    height: 50px;
+    z-index: 11;
+}
+
+.show2 i {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+    0% {
+        width: 0rem;
+        height: 0rem;
+    }
+
+    50% {
+        width: 70px;
+        height: 70px;
+    }
+
+    100% {
+        width: 50px;
+        height: 50px;
+    }
+}
+
 /***************gallery**************************/
 #trabajos .col-lg-4 {
     margin: 0 !important;
@@ -343,6 +418,17 @@ body {
     background-color: #fafafa;
 }
 
+@media screen and (max-width:2960px) {
+    .bloque {
+        width: 350px;
+        padding: 25px;
+        position: relative;
+        background: black;
+        left: 650px;
+        top: 110px;
+    }
+}
+
 @media screen and (max-width:2560px) {
     .bloque {
         width: 350px;
@@ -354,6 +440,17 @@ body {
     }
 }
 
+@media screen and (max-width:2046px) {
+    .bloque {
+        width: 350px;
+        padding: 25px;
+        position: relative;
+        background: black;
+        left: 650px;
+        top: 110px;
+    }
+}
+
 @media screen and (max-width:1440px) {
     .bloque {
         width: 350px;
@@ -361,6 +458,51 @@ body {
         position: relative;
         background: black;
         left: 700px;
+        top: 110px;
+    }
+}
+
+@media screen and (max-width:1334px) {
+    .bloque {
+        width: 350px;
+        padding: 25px;
+        position: relative;
+        background: black;
+        left: 680px;
+        top: 110px;
+    }
+}
+
+@media screen and (max-width:1242px) {
+    .bloque {
+        width: 350px;
+        padding: 25px;
+        position: relative;
+        background: black;
+        top: 110px;
+        left: 650px;
+    }
+}
+
+
+@media screen and (max-width:1125px) {
+    .bloque {
+        width: 350px;
+        padding: 25px;
+        position: relative;
+        background: black;
+        top: 110px;
+        left: 500px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .bloque {
+        width: 350px;
+        padding: 25px;
+        position: relative;
+        background: black;
+        left: 530px;
         top: 110px;
     }
 }
@@ -404,16 +546,42 @@ body {
     }
 }
 
+@media screen and (max-width:768px) {
+    .btn-mobile {
+        padding-left: 113px;
+    }
+
+    #menu {
+        position: relative;
+        left: 200px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .btn-mobile {
+        display: none;
+    }
+
+    .icon-mobile {
+        position: relative;
+        right: 160px;
+    }
+}
+
 @media screen and (max-width:700px){
+    .btn-mobile {
+        display: none;
+    }
+
     .menu-toggle{
         display: block;
         margin-left: 320px;
     }
 
     #menu{
-        background: #000000;
+        background: transparent;
         position: absolute;
-        top: 60px;
+        top: 110px;
         left: 0;
         width: 100%;
         height: 0;
@@ -446,6 +614,10 @@ body {
 }
 
 @media screen and (max-width:640px) {
+    .btn-mobile {
+        display: none;
+    }
+
     .primer-titulo {
         font-size: 40px;
     }
@@ -457,6 +629,10 @@ body {
 }
 
 @media screen and (max-width:500px) {
+    .btn-mobile {
+        display: none;
+    }
+
     .menu-toggle{
         display: block;
         margin-left: 280px;
@@ -495,28 +671,30 @@ body {
     .carousel {
         position: relative;
     }
-
-    .paragraph-carousel {
-        position: absolute;
-        bottom: 16px;
-        right: 5px;
-    }
 }
 
 @media screen and (max-width:480px) {
+    .btn-mobile {
+        display: none;
+    }
+
     .bloque {
         width: 459px;
     }
     
     .icon-mobile {
         position: relative;
-        right: 105px;
+        right: 112px;
     }
 
 
 }
 
 @media screen and (max-width:425px) {
+    .btn-mobile {
+        display: none;
+    }
+
     .menu-toggle{
         display: block;
         margin-left: 210px;
@@ -540,17 +718,30 @@ body {
 }
 
 @media screen and (max-width:400px) {
+    .btn-mobile {
+        display: none;
+    }
+
     .bloque {
-        width: 379px;
+        width: 380px;
         padding: 25px;
         background: black;
         position: relative;
         left: 0;
         top: 0;
     }
+
+    .icon-mobile {
+        position: relative;
+        right: 40px;
+    }
 }
 
 @media screen and (max-width:412px) {
+    .btn-mobile {
+        display: none;
+    }
+
     .menu-toggle {
         display: block;
         margin-left: 195px;
@@ -574,6 +765,10 @@ body {
 }
 
 @media screen and (max-width:384px) {
+    .btn-mobile {
+        display: none;
+    }
+
     .menu-toggle {
         display: block;
         margin-left: 185px;
@@ -597,6 +792,10 @@ body {
 }
 
 @media screen and (max-width:375px) {
+    .btn-mobile {
+        display: none;
+    }
+
     .menu-toggle{
         display: block;
         margin-left: 150px;
@@ -621,6 +820,10 @@ body {
 }
 
 @media screen and (max-width:360px) {
+    .btn-mobile {
+        display: none;
+    }
+
     .bloque {
         width: 339px;
     }
@@ -634,6 +837,10 @@ body {
 }
 
 @media screen and (max-width:320px) {
+    .btn-mobile {
+        display: none;
+    }
+
     .menu-toggle{
         display: block;
         margin-left: 120px;
@@ -677,9 +884,14 @@ body {
         margin-top: 16px;
         left: 140px;
     }
+
 }
 
 @media screen and (max-width: 280px){ 
+    .btn-mobile {
+        display: none;
+    }
+
     .menu-toggle {
         display: block;
         margin-left: 80px;

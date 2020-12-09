@@ -13,3 +13,21 @@ menuToggle.addEventListener('click', e=>{
     }
 
 });
+
+window.onscroll = function(){
+    if(document.documentElement.scrollTop > 600){
+        document.querySelector('.go-top-container')
+        .classList.add('show2');
+    }else{
+        document.querySelector('.go-top-container')
+        .classList.remove('show2');
+    }
+}
+
+document.querySelector('.go-top-container')
+.addEventListener('click', () =>{
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
