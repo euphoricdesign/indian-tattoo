@@ -326,7 +326,7 @@ header {
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    color: rgb(155, 155, 155)4, 93, 93);
+    color: rgb(155, 155, 155);
     transition: .2s;
 }
 
