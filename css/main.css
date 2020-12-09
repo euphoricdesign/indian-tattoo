@@ -76,6 +76,27 @@ header {
     color: rgb(228, 228, 228);
 }
 
+.ancla-2::after, .ancla-1:hover::after {
+    transform: scaleX(1);
+}
+
+.ancla-1::after {
+    display: block;
+    right: 10px;
+    left: 10px;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: center center;
+    transition: transform .2s cubic-bezier(.2,0,.4,1);
+    background-color: currentColor;
+}
+
+.ancla-1::after, .ancla-1::before {
+    content: "";
+    position: absolute;
+    bottom: 35px;
+}
+
 .show {
     height: 305px !important;
 }
