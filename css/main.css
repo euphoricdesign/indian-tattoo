@@ -7,7 +7,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     box-sizing: border-box;
     color: black;
 }
@@ -53,7 +53,7 @@ header {
 
 #menu{
     position: relative;
-    left: 440px;
+    left: 400px;
 }
 
 #menu .ul-navbar li{
@@ -109,6 +109,14 @@ header {
     background:black;
     left: 500px;
     top: 110px;
+}
+
+.btn-desktop {
+    margin-left: 12px;
+}
+
+.btn-hover:hover {
+    filter: opacity(.5);
 }
 
 .absolute {
@@ -459,6 +467,20 @@ body {
         left: 720px;
         top: 110px;
     }
+
+    .go-top-container {
+        position: fixed;
+        bottom: 40px;
+        left: 1880px;
+        width: 50px;
+        height: 50px;
+        z-index: -1;
+    }
+
+    #menu {
+        position: relative;
+        left: 600px;
+    }
 }
 
 @media screen and (max-width:2046px) {
@@ -480,6 +502,15 @@ body {
         background: black;
         left: 700px;
         top: 110px;
+    }
+
+    .go-top-container {
+        position: fixed;
+        bottom: 40px;
+        left: 1308px;
+        width: 50px;
+        height: 50px;
+        z-index: -1;
     }
 }
 
@@ -537,6 +568,20 @@ body {
         left: 500px;
         top: 110px;
     }
+
+    #menu {
+        position: relative;
+        left: 400px;
+    }
+
+    .go-top-container {
+        position: fixed;
+        bottom: 40px;
+        left: 990px;
+        width: 50px;
+        height: 50px;
+        z-index: -1;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -575,6 +620,13 @@ body {
     #menu {
         position: relative;
         left: 200px;
+    }
+
+    .question-box li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        left: 265px;
     }
 }
 
@@ -813,6 +865,12 @@ body {
 }
 
 @media screen and (max-width:375px) {
+    .font-size-paragraph {
+        font-size: 17px;
+    }
+
+
+
     .btn-mobile {
         display: none;
     }
@@ -894,7 +952,7 @@ body {
     }
 
     .paragraph-carousel {
-        position: absolute;
+        position: relative;
         bottom: 16px;
         right: 5px;
     }
@@ -903,7 +961,7 @@ body {
         position: absolute;
         transform: translate(-6px, 0);
         margin-top: 16px;
-        left: 140px;
+        left: 235px;
     }
 
 }
