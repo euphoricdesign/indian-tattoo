@@ -7,7 +7,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Pathway Gothic One', sans-serif;
     box-sizing: border-box;
     color: black;
 }
@@ -116,7 +116,8 @@ header {
 }
 
 .btn-hover:hover {
-    filter: opacity(.5);
+    filter: opacity(.3);
+    
 }
 
 .absolute {
@@ -133,7 +134,7 @@ header {
 
 .primer-titulo {
     font-size: 80px;
-    font-weight: 900;
+    font-weight: bold;
     z-index: 100;
     color: #fff;
     margin-bottom: 30px;
