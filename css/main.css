@@ -1,8 +1,4 @@
-
-
-
-html,body
-{
+html,body {
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -25,6 +21,10 @@ header {
 
 #artistas .artistas:hover {
     border: 2px solid transparent;
+}
+
+.artist {
+    margin: 50px
 }
 
 /*#estudio .carousel-img {
@@ -167,6 +167,7 @@ header {
     margin-bottom: 3.125rem;
     min-width: 100%;
     background-size: contain;
+    padding-bottom: 1px;
 }
 
 .carousel {
@@ -304,7 +305,7 @@ header {
 .question-box li input[type=checkbox] {
     position: absolute;
     cursor: pointer;
-    width: 100%;
+    width: 60%;
     height: 100%;
     z-index: 1;
     opacity: 0;
@@ -392,6 +393,19 @@ header {
 }
 
 /***************gallery**************************/
+.works {
+    
+}
+
+.my-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 #trabajos .col-lg-4 {
     margin: 0 !important;
     padding: 25px;
@@ -724,7 +738,7 @@ body {
     }
 
     .bloque {
-        width: 345px;
+        width: 100%;
         padding: 25px;
         background: black;
         position: relative;
