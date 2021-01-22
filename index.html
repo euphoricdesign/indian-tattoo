@@ -22,6 +22,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500&display=swap" rel="stylesheet">
@@ -50,6 +52,78 @@
           width: 300px;
           height: 300px;
 
+      }
+
+      .main {
+          max-width: 1000px;
+          margin: auto;
+      }
+
+      .fila {
+          margin: 10px -16px;
+      }
+
+/* Add padding BETWEEN each column */
+      .fila,
+      .fila > .column {
+          padding: 8px;
+      }
+
+/* Create three equal columns that floats next to each other */
+      .column {
+          float: left;
+          width: 33.33%;
+          display: none; /* Hide all elements by default */
+      }
+
+/* Clear floats after rows */ 
+      .fila:after {
+          content: "";
+          display: table;
+          clear: both;
+      }
+
+/* Content */
+      .content-img-gallery {
+          padding: 25px;
+      }
+
+/* The "show" class is added to the filtered elements */
+      .show {
+          display: block;
+      }
+
+/* Style the buttons */
+      .btn-gallery {
+          border: none;
+          border-radius: 2px;
+          outline: none;
+          padding: 12px 16px;
+          background-color: black;
+          color: white;
+          cursor: pointer;
+          font-family: 'Open Sans Condensed', sans-serif;
+          margin: 0 8px;
+          padding: 10px 30px;
+      }
+
+      .btn-gallery:hover {
+          background-color: #ddd;
+          color: black;
+      }
+
+      
+
+      .content-img-gallery img {
+          width: 100%;
+          height: 300px;
+          border-radius: 2px;
+          filter: grayscale(1);
+      }
+
+      .img-effect-hover:hover {
+          filter: grayscale(0);
+          border: 5px solid white;
       }
     </style>
 </head>
@@ -123,9 +197,9 @@
           </div>
           <div class="col-md-6">
             <div class="header-content-right container">
-              <h3 class="display-4" style="color: white;">Maya Braile</h3>
+              <h2 class="h1 font-weight-bold" style="color: white; font-size: 50px;">Maya Braile</h2>
               <h5 class="my-3" style="color: white;">Tattoo artist and piercer</h5>
-              <p class="font-size-paragraph" style="color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia amet deserunt dolor rem dignissimos culpa, eum, dolorem explicabo aperiam cum eaque obcaecati eligendi voluptatem accusamus optio error earum? Ratione, ut quidem sit ipsa quae ducimus delectus explicabo obcaecati voluptatem facilis.</p>
+              <p class="font-size-paragraph" style="color: white; font-family: 'Open Sans Condensed', sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia amet deserunt dolor rem dignissimos culpa, eum, dolorem explicabo aperiam cum eaque obcaecati eligendi voluptatem accusamus optio error earum? Ratione, ut quidem sit ipsa quae ducimus delectus explicabo obcaecati voluptatem facilis.</p>
             </div>
           </div>
         </div>
@@ -133,9 +207,9 @@
         <div class="row">
           <div class="col-md-6">
             <div class="header-content-left container">
-              <h3 class="display-4" style="color: white;">Melina Vizgarra</h3>
+              <h2 class="h1 font-weight-bold" style="color: white; font-size: 50px;">Melina Vizgarra</h2>
               <h5 class="my-3" style="color: white;">Tattoo artist</h5>
-              <p class="font-size-paragraph" style="color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia amet deserunt dolor rem dignissimos culpa, eum, dolorem explicabo aperiam cum eaque obcaecati eligendi voluptatem accusamus optio error earum? Ratione, ut quidem sit ipsa quae ducimus delectus explicabo obcaecati voluptatem facilis.</p>
+              <p class="font-size-paragraph" style="color: white; font-family: 'Open Sans Condensed', sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia amet deserunt dolor rem dignissimos culpa, eum, dolorem explicabo aperiam cum eaque obcaecati eligendi voluptatem accusamus optio error earum? Ratione, ut quidem sit ipsa quae ducimus delectus explicabo obcaecati voluptatem facilis.</p>
             </div>
           </div>
           <div class="col-md-6">
@@ -154,9 +228,9 @@
         </div>
         <div class="col-md-6">
           <div class="header-content-right container">
-            <h3 class="display-4" style="color: white;">Ian Cubei</h3>
+            <h2 class="h1 font-weight-bold" style="color: white; font-size: 50px;">Ian Cubei</h2>
             <h5 class="my-3" style="color: white;">Tattoo artist</h5>
-            <p class="font-size-paragraph" style="color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia amet deserunt dolor rem dignissimos culpa, eum, dolorem explicabo aperiam cum eaque obcaecati eligendi voluptatem accusamus optio error earum? Ratione, ut quidem sit ipsa quae ducimus delectus explicabo obcaecati voluptatem facilis.</p>
+            <p class="font-size-paragraph" style="color: white; font-family: 'Open Sans Condensed', sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia amet deserunt dolor rem dignissimos culpa, eum, dolorem explicabo aperiam cum eaque obcaecati eligendi voluptatem accusamus optio error earum? Ratione, ut quidem sit ipsa quae ducimus delectus explicabo obcaecati voluptatem facilis.</p>
           </div>
         </div>
       </div>
@@ -169,33 +243,70 @@
           <p class="m-4 font-size-paragraph" style="font-size: 20px;color: rgb(110, 110, 110);">Mirá algunos de nuestros últimos trabajos</p>
       </div>
 
-      <div class="pt-2 pb-2 btn-mobile btn-desktop">
-        <button class="btn btn-sm text-left mr-2 btn-hover" style="width: 100px; background: black; color: white; font-size: 16px;">All</button>
-        <button class="btn btn-sm text-left mr-2 btn-hover" style="width: 100px; background: black; color: white; font-size: 16px;">Maya</button>
-        <button class="btn btn-sm text-left mr-2 btn-hover" style="width: 100px; background: black; color: white; font-size: 16px;">Melina</button>
-        <button class="btn btn-sm text-left mr-2 btn-hover" style="width: 100px; background: black; color: white; font-size: 16px;">Ian</button>
+      <div class="main">
+
+
+
+      <div id="myBtnContainer" style="position: relative; left: 18px;">
+          <button class="btn-gallery active-btn" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn-gallery" onclick="filterSelection('maya')"> Maya</button>
+          <button class="btn-gallery" onclick="filterSelection('melina')"> Melina</button>
+          <button class="btn-gallery" onclick="filterSelection('ian')"> Ian</button>
       </div>
-
-
-      <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12">
-              <img src="img/tattoo1.jpg" alt="">
+        
+        <!-- Portfolio Gallery Grid -->
+      <div class="fila">
+          <div class="column maya">
+              <div class="content-img-gallery">
+                  <img src="img/tattoo1.jpg" class="img-effect-hover" alt="Mountains" style="width:100%">
+              </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-              <img src="img/tattoo2.jpg" alt="">
+          <div class="column maya">
+              <div class="content-img-gallery">
+                  <img src="img/tattoo2.jpg" class="img-effect-hover" alt="Lights" style="width:100%">
+              </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-              <img src="img/tattoo7.jpg" alt="">
+          <div class="column maya">
+              <div class="content-img-gallery">
+                  <img src="img/tattoo6.jpg" class="img-effect-hover" alt="Nature" style="width:100%">
+              </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-              <img src="img/tattoo4.jpg" alt="">
+        
+          <div class="column melina">
+              <div class="content-img-gallery">
+                  <img src="img/tattoo4.jpg" class="img-effect-hover" alt="Car" style="width:100%">
+              </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-              <img src="img/tattoo5.jpg" alt="">
+          <div class="column melina">
+              <div class="content-img-gallery">
+                  <img src="img/tattoo5.jpg" class="img-effect-hover" alt="Car" style="width:100%">
+              </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12">
-              <img src="img/tattoo6.jpg" alt="">
+          <div class="column melina">
+              <div class="content-img-gallery">
+                  <img src="img/tattoo6.jpg" class="img-effect-hover" alt="Car" style="width:100%">
+              </div>
           </div>
+        
+          <div class="column ian">
+              <div class="content-img-gallery">
+                  <img src="img/tattoo7.jpg" class="img-effect-hover" alt="Car" style="width:100%">
+              </div>
+          </div>
+          <div class="column ian">
+              <div class="content-img-gallery">
+                  <img src="img/tattoo1.jpg" class="img-effect-hover" alt="Car" style="width:100%">
+              </div>
+          </div>
+          <div class="column ian">
+              <div class="content-img-gallery">
+                  <img src="img/tattoo2.jpg" class="img-effect-hover" alt="Car" style="width:100%">
+              </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+        
+        <!-- END MAIN -->
       </div>
     </section>
 
@@ -210,24 +321,24 @@
                 <li>
                     <input type="checkbox" checked>
                     <i></i>
-                    <h2 class="question-accordion" style="font-size: 16px;">¿Cuándo están abiertos?</h2>
-                    <p class="paragraph-accordion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
+                    <h2 class="question-accordion" style="font-size: 16px; font-family: 'Open Sans Condensed', sans-serif; font-weight: bold;">¿Cuándo están abiertos?</h2>
+                    <p class="paragraph-accordion" style="font-family: 'Open Sans Condensed', sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
                     </p>
                 </li>
     
                 <li>
                     <input type="checkbox" checked>
                     <i></i>
-                    <h2 class="question-accordion" style="font-size: 16px;">¿Cuándo están abiertos?</h2>
-                    <p class="paragraph-accordion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
+                    <h2 class="question-accordion" style="font-size: 16px; font-family: 'Open Sans Condensed', sans-serif; font-weight: bold;">¿Cuándo están abiertos?</h2>
+                    <p class="paragraph-accordion" style="font-family: 'Open Sans Condensed', sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
                     </p>
                 </li>
     
                 <li>
                     <input type="checkbox" checked>
                     <i></i>
-                    <h2 class="question-accordion" style="font-size: 16px;">¿Qué formas de pago aceptan?</h2>
-                    <p class="paragraph-accordion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
+                    <h2 class="question-accordion" style="font-size: 16px; font-family: 'Open Sans Condensed', sans-serif; font-weight: bold;">¿Qué formas de pago aceptan?</h2>
+                    <p class="paragraph-accordion" style="font-family: 'Open Sans Condensed', sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
                     </p>
                 </li>
             </ul>
@@ -239,24 +350,24 @@
                 <li>
                     <input type="checkbox" checked>
                     <i></i>
-                    <h2 class="question-accordion" style="font-size: 16px;">¿Puedo tatuarme un diseño ya realizado?</h2>
-                    <p class="paragraph-accordion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
+                    <h2 class="question-accordion" style="font-size: 16px; font-family: 'Open Sans Condensed', sans-serif; font-weight: bold;">¿Puedo tatuarme un diseño ya realizado?</h2>
+                    <p class="paragraph-accordion" style="font-family: 'Open Sans Condensed', sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
                     </p>
                 </li>
     
                 <li>
                     <input type="checkbox" checked>
                     <i></i>
-                    <h2 class="question-accordion" style="font-size: 16px;">¿Qué cuidados debo tener después con mi tatuaje?</h2>
-                    <p class="paragraph-accordion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
+                    <h2 class="question-accordion" style="font-size: 16px; font-family: 'Open Sans Condensed', sans-serif; font-weight: bold;">¿Qué cuidados debo tener después con mi tatuaje?</h2>
+                    <p class="paragraph-accordion" style="font-family: 'Open Sans Condensed', sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
                     </p>
                 </li>
     
                 <li>
                     <input type="checkbox" checked>
                     <i></i>
-                    <h2 class="question-accordion" style="font-size: 16px;">¿Puedo reservar un turno vía mail o teléfono?</h2>
-                    <p class="paragraph-accordion">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
+                    <h2 class="question-accordion" style="font-size: 16px; font-family: 'Open Sans Condensed', sans-serif; font-weight: bold;">¿Puedo reservar un turno vía mail o teléfono?</h2>
+                    <p class="paragraph-accordion" style="font-family: 'Open Sans Condensed', sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A optio iure voluptatibus delectus quibusdam magni, esse consequatur nam aliquam temporibus, veritatis eaque unde aliquid. Animi, architecto? Ipsa adipisci ab vero!
                     </p>
                 </li>
             </ul>
@@ -369,6 +480,52 @@
       },
       });
     </script>
+
+<script>
+  filterSelection("all")
+  function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+  }
+  
+  function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+  }
+  
+  function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+  }
+  element.className = arr1.join(" ");
+  }
+  
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active-btn");
+      current[0].className = current[0].className.replace(" active-btn", "");
+      this.className += " active";
+  });
+  }
+  </script>
 
 
 </body>
