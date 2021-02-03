@@ -3,7 +3,7 @@ html,body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: 'Pathway Gothic One', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     box-sizing: border-box;
     color: black;
 }
@@ -25,6 +25,16 @@ header {
 
 .artist {
     margin: 50px
+}
+
+.artist-container {
+    position: relative;
+    left: 88px;
+}
+
+.tit-estudio-fondowhite {
+    font-size: 50px;
+    color: black;
 }
 
 /*#estudio .carousel-img {
@@ -69,6 +79,8 @@ header {
     padding: 0 8px;
     text-transform: uppercase;
     transition: .2s;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #menu .ul-navbar li a:hover{
@@ -115,13 +127,8 @@ header {
     margin-left: 12px;
 }
 
-.btn-hover {
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
 .btn-hover:hover {
-    filter: opacity(.3);
-    
+    filter: opacity(.5);
 }
 
 .absolute {
@@ -137,17 +144,19 @@ header {
 }
 
 .primer-titulo {
-    font-size: 80px;
-    font-weight: bold;
+    font-size: 56px;
+    font-weight: 200;
     z-index: 100;
     color: #fff;
     margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }
 
 .primer-titulo::after {
     display: block;
     width: 30%;
-    height: 10px;
+    height: 2px;
     content: "";
     margin: auto;
     background: #fff;
@@ -180,10 +189,6 @@ header {
     margin: 2.5rem 0;
 }
 
-.paragraph-carousel {
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
 .contact-wrapper {
     position: absolute;
     z-index: 10;
@@ -195,7 +200,7 @@ header {
 
 .img-bg {
     background-image: url(../img/fondo2.jpg);
-    background-size: auto;
+    background-size: cover;
 }
 
 .icon {
@@ -212,6 +217,11 @@ header {
     bottom: auto;
 }
 
+.font-size-paragraph {
+    font-size: 20px; 
+    color: rgb(110, 110, 110);
+}
+
 /************************accordion************************/
 .accordion {
     width: 100%;
@@ -220,17 +230,16 @@ header {
     left: 50%;
     transform: translate(-50%, 0);
     margin: 90px 0;
-    background: #fefffa;
+    background: rgba(221, 220, 220, 0.1);
     padding: 0 30px;
 }
 
 .question-accordion {
-    font-size: 26px;
+    font-size: 16px;
     line-height: 34px;
     font-weight: 300;
     letter-spacing: 1px;
     display: block;
-    background: #fefffa;
     color: #646464;
     margin: 0;
     cursor: pointer;
@@ -262,7 +271,6 @@ header {
     margin: 0;
     padding-bottom: 4px;
     padding-top: 18px;
-    border-top: 1px dotted #dce7eb;
 }
 
 .question-box li:nth-of-type(1) {
@@ -357,15 +365,15 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: 10;
 }
 .go-top-button i {
     position: absolute;
-    font-size: 20px;
+    font-size: 15px;
     top: 48%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    color: rgb(155, 155, 155);
+    color: rgb(58, 55, 55);
     transition: .2s;
 }
 
@@ -401,12 +409,19 @@ header {
     }
 }
 
-<<<<<<< HEAD
-=======
-/***************gallery**************************/
-.works {
-    
+.nombre-artista {
+    color: white; 
+    font-size: 50px; 
+    font-weight: 600;
 }
+
+.tit-estudio-fondoblack {
+    font-size: 50px; 
+    color: white;
+}
+
+
+/***************gallery**************************/
 
 .my-row {
     display: -ms-flexbox;
@@ -436,7 +451,6 @@ header {
 
 /***************end gallery*************/
 
->>>>>>> 70b5d6fa5236003ffec45a8d8827abd8ab03c7fd
 #contacto .info ul {
     color: white;
     list-style: none;
@@ -521,22 +535,85 @@ body {
 }
 
 @media screen and (max-width:1440px) {
+    .paragraph-carousel {
+        font-size: 22px;
+    }
+
+    .information {
+        font-size: 20px;
+    }
+
+    .icon {
+        color: white;
+        position: absolute;
+        bottom: 53px;
+        right: 268px;
+    }
+
+    .icon-2 {
+        color: white;
+        position: absolute;
+        right: 268px;
+        top: 2px;
+    }
+
+
+    .tit-estudio-fondoblack {
+        font-size: 70px; 
+        color: white;
+    }
+
+
+    .tit-estudio-fondowhite{
+        font-size: 70px;
+    }
+
+    .text-mobile {
+        font-size: 50px;
+    }
+
+    .question-accordion {
+        font-size: 22px;
+    }
+
+    .font-size-paragraph {
+        font-size: 28px;
+    }
+
+    .profesion-mobile {
+        font-size: 30px;
+    }
+
+    .font-size-paragraph-artistas {
+        font-size: 22px;
+    }
+
+
+    #menu {
+        position: relative;
+        left: 820px;
+    }
+
     .bloque {
         width: 350px;
         padding: 25px;
         position: relative;
         background: black;
-        left: 700px;
+        left: 950px;
         top: 110px;
     }
 
     .go-top-container {
         position: fixed;
         bottom: 40px;
-        left: 1308px;
+        left: 1420px;
         width: 50px;
         height: 50px;
-        z-index: -1;
+        z-index: 10;
+    }
+
+    .font-size-footer{
+        font-size: 22px;
     }
 }
 
@@ -550,6 +627,14 @@ body {
         top: 110px;
     }
 }
+
+@media screen and (max-width:1280px) {
+    #menu {
+        position: relative;
+        left: 650px;
+    }
+}
+
 
 @media screen and (max-width:1242px) {
     .bloque {
@@ -586,12 +671,54 @@ body {
 }
 
 @media screen and (max-width:1024px) {
+
+    .font-size-paragraph {
+        font-size: 22px;
+    }
+
+    .question-accordion {
+        font-size: 18px;
+    }
+
+    .profesion-mobile {
+        font-size: 22px;
+    }
+
+    .font-size-paragraph-artistas {
+        font-size: 17px;
+    }
+
+
+    .tit-estudio-fondowhite {
+        font-size: 55px;
+    }
+
+
+    .tit-estudio-fondoblack {
+        font-size: 55px;
+        color: white;
+    }
+
+
+
+    .font-size-footer {
+        font-size: 20px;
+    }
+
+    .paragraph-carousel {
+        font-size: 19px;
+    }
+
+    .text-mobile {
+        font-size: 45px;
+    }
+
     .bloque {
         width: 350px;
         padding: 25px;
         position: relative;
         background: black;
-        left: 500px;
+        left: 580px;
         top: 110px;
     }
 
@@ -603,10 +730,10 @@ body {
     .go-top-container {
         position: fixed;
         bottom: 40px;
-        left: 990px;
+        left: 1010px;
         width: 50px;
         height: 50px;
-        z-index: -1;
+        z-index: 10;
     }
 }
 
@@ -639,20 +766,64 @@ body {
 }
 
 @media screen and (max-width:768px) {
+
+    .primer-titulo {
+        font-size: 48px;
+    }
+
+    .tit-estudio-fondowhite {
+        font-size: 50px;
+    }
+
+    .font-size-paragraph {
+        font-size: 21px;
+    }
+
+    .tit-estudio-fondoblack {
+        font-size: 50px;
+        color: white;
+    }
+
+    .font-size-paragraph-artistas {
+        font-size: 17px;
+    }
+
+    .profesion-mobile {
+        font-size: 22px;
+    }
+
+    .question-accordion {
+        font-size: 17px;
+    }
+
+    .font-size-footer {
+        font-size: 19px;
+    }
+
+    .artist-container {
+        position: relative;
+        left: 70px;
+    }
+
+    .icon-mobile {
+        position: relative;
+        right: 420px;
+    }
+
     .btn-mobile {
         padding-left: 113px;
     }
 
     #menu {
         position: relative;
-        left: 200px;
+        left: 160px;
     }
 
     .question-box li i {
         position: absolute;
         transform: translate(-6px, 0);
         margin-top: 16px;
-        left: 265px;
+        left: 295px;
     }
 }
 
@@ -725,6 +896,60 @@ body {
         position: relative;
         right: 170px;
     }
+
+    .artist-container {
+        position: relative;
+        left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: 400px;
+    }
+
+    .question-box li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        left: 530px;
+    }
+
+    .icon {
+        color: white;
+        position: absolute;
+        bottom: 53px;
+        right: 380px;
+    }
+
+    .icon-2 {
+        color: white;
+        position: absolute;
+        right: 380px;
+        top: 2px;
+    }
+}
+
+@media screen and (max-width:600) {
+    .question-box li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        left: 490px;
+    }
+
+    .icon {
+        color: white;
+        position: absolute;
+        bottom: 53px;
+        left: 125px;
+    }
+
+    .icon-2 {
+        color: white;
+        position: absolute;
+        left: 125px;
+        top: 2px;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -786,11 +1011,100 @@ body {
         right: 112px;
     }
 
+    .bloque {
+        width: 480px;
+    }
+
+    .icon {
+        color: white;
+        position: absolute;
+        bottom: 53px;
+        right: 280px;
+    }
+
+    .icon-2 {
+        color: white;
+        position: absolute;
+        right: 280px;
+        top: 2px;
+    }
+
+    .accordion {
+        margin: 30px 0;
+    }
+
 
 }
 
 @media screen and (max-width:425px) {
+    .primer-titulo {
+        font-size: 35px;
+    }
+
+    .tit-estudio-fondowhite {
+        font-size: 45px;
+    }
+
+    .tit-estudio-fondoblack {
+        font-size: 45px;
+        color: white;
+    }
+
+    .nombre-artista {
+        color: white;
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    .profesion-mobile {
+        font-size: 20px;
+    }
+
+    .font-size-paragraph-artistas {
+        font-size: 16px;
+    }
+
+    .font-size-paragraph {
+        font-size: 17px;
+    }
+    
+    .text-mobile {
+        font-size: 45px;
+    }
+
+    .information {
+        font-size: 16px;
+    }
+
+    .icon-mobile {
+        position: relative;
+        right: 20px;
+    }
+
+    .ubi-mobile {
+        position: relative;
+        right: 20px;
+        top: 12px;
+    }
+
+    .font-size-footer {
+        font-size: 16px;
+    }
+    
+    .question-accordion {
+        font-size: 17px;
+    }
+
+    .artist-container {
+        position: relative;
+        left: 0;
+    }
+
     .btn-mobile {
+        display: none;
+    }
+
+    .btn-gallery {
         display: none;
     }
 
@@ -800,7 +1114,7 @@ body {
     }
 
     .bloque {
-        width: 405px;
+        width: 425px;
         padding: 25px;
         background: black;
         position: relative;
@@ -812,7 +1126,12 @@ body {
         position: absolute;
         transform: translate(-6px, 0);
         margin-top: 16px;
-        left: 130px;
+        left: 325px;
+    }
+
+    .icon-mobile {
+        position: relative;
+        right: 70px;
     }
 }
 
@@ -837,6 +1156,10 @@ body {
 }
 
 @media screen and (max-width:412px) {
+    .accordion{
+        margin: 30px 0;
+    }
+    
     .btn-mobile {
         display: none;
     }
@@ -850,7 +1173,7 @@ body {
         position: absolute;
         transform: translate(-6px, 0);
         margin-top: 16px;
-        left: 126px;
+        left: 320px;
     }
 
     .icon-mobile {
@@ -859,8 +1182,22 @@ body {
     }
 
     .bloque {
-        width: 392px;
-    }    
+        width: 412px;
+    }
+    
+    .icon {
+        color: white;
+        position: absolute;
+        bottom: 53px;
+        left: 10px;
+    }
+
+    .icon-2 {
+        color: white;
+        position: absolute;
+        left: 10px;
+        top: 2px;
+    }
 }
 
 @media screen and (max-width:384px) {
@@ -877,7 +1214,21 @@ body {
         position: absolute;
         transform: translate(-6px, 0);
         margin-top: 16px;
-        left: 115px;
+        left: 287px;
+    }
+
+    .icon {
+        color: white;
+        position: absolute;
+        bottom: 53px;
+        right: 250px;
+    }
+
+    .icon-2 {
+        color: white;
+        position: absolute;
+        top: 2px;
+        right: 250px;
     }
 
     .bloque {
@@ -891,6 +1242,77 @@ body {
 }
 
 @media screen and (max-width:375px) {
+    .primer-titulo {
+        font-size: 30px;
+    }
+
+    .tit-estudio-fondoblack {
+        font-size: 45px;
+        color: white;
+    }
+
+    .nombre-artista {
+        color: white;
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    .font-size-paragraph-artistas {
+        font-size: 16px;
+    }
+
+    .question-accordion {
+        font-size: 16px;
+    }
+
+    .text-mobile {
+        font-size: 45px;
+    }
+
+    .icon {
+        color: white;
+        position: absolute;
+        right: 268px;
+    }
+
+    .icon-2 {
+        color: white;
+        position: absolute;
+        right: 268px;
+    }
+
+    .ubi-mobile {
+        position: relative;
+        right: 20px;
+        top: 12px;
+    }
+
+    .font-size-footer {
+        font-size: 16px;
+    }
+
+    .information {
+        font-size: 16px;
+    }
+    
+    .profesion-mobile {
+        font-size: 20px;
+    }
+
+    .tit-estudio-fondowhite {
+        font-size: 45px;
+    }
+
+    .font-size-paragraph {
+        font-size: 18px;
+    }
+
+    .artist-container {
+        position: relative;
+        left: 0;
+    }
+
+
     .font-size-paragraph {
         font-size: 17px;
     }
@@ -898,6 +1320,10 @@ body {
 
 
     .btn-mobile {
+        display: none;
+    }
+
+    .btn-gallery {
         display: none;
     }
 
@@ -912,38 +1338,132 @@ body {
 
     .icon-mobile {
         position: relative;
-        left: 10px;
+        right: 20px;
     }
 
     .question-box li i {
         position: absolute;
         transform: translate(-6px, 0);
         margin-top: 16px;
-        left: 111px;
+        left: 279px;
     }
 
 }
 
 @media screen and (max-width:360px) {
-    .btn-mobile {
-        display: none;
-    }
 
-    .bloque {
-        width: 339px;
+    .accordion {
+        margin: 25px 0;
     }
 
     .question-box li i {
         position: absolute;
         transform: translate(-6px, 0);
         margin-top: 16px;
-        left: 106px;
+        left: 260px;
+    }
+
+    .bloque {
+        width: 360px;
+    }
+
+    .icon-mobile {
+        position: relative;
+        right: 20px;
+        bottom: 2px;
+    }
+
+    .icon-2 {
+        color: white;
+        position: absolute;
+        right: 250px;
+    }
+
+
+    .icon {
+        color: white;
+        position: absolute;
+        right: 250px;
+    }
+
+
+    .btn-mobile {
+        display: none;
+    }
+
+    .question-box li i {
+        position: absolute;
+        transform: translate(-6px, 0);
+        margin-top: 16px;
+        left: 268px;
     }
 }
 
 @media screen and (max-width:320px) {
+
+    .accordion {
+        margin: 30px 0;
+    }
+
+    .icon {
+        color: white;
+        position: absolute;
+        right: 268px;
+        bottom: 38px;
+    }
+
+    
+
+    .icon-2 {
+        color: white;
+        position: absolute;
+        right: 268px;
+    }
+
+    .information {
+        font-size: 15px;
+    }
+
+    .tit-estudio-fondoblack {
+        font-size: 40px;
+    }
+
+    .profesion-mobile {
+        font-size: 17px;
+    }
+
+    .font-size-paragraph-artistas {
+        font-size: 15px;
+    }
+
+    .font-size-paragraph {
+        font-size: 17px;
+        color: rgb(110, 110, 110);
+    }
+
+    .primer-titulo {
+        font-size: 25px;
+    }
+
+    .tit-estudio-fondowhite {
+        font-size: 40px;
+    }
+
+    .artist-container {
+        position: relative;
+        left: 0;
+    }
+    
     .btn-mobile {
         display: none;
+    }
+
+    .btn-gallery {
+        display: none;
+    }
+
+    .nombre-artista {
+        font-size: 40px;
     }
 
     .menu-toggle{
@@ -956,7 +1476,7 @@ body {
     }
 
     .bloque {
-        width: 300px;
+        width: 320px;
         padding: 25px;
         background: black;
         position: relative;
@@ -966,7 +1486,12 @@ body {
 
     .icon-mobile {
         position: relative;
-        left: 60px;
+        left: 40px;
+        bottom: 2px;
+    }
+
+    .font-size-footer {
+        font-size: 15px;
     }
 
     .navbar {
@@ -981,13 +1506,22 @@ body {
         position: relative;
         bottom: 16px;
         right: 5px;
+        font-size: 15px;
     }
 
     .question-box li i {
         position: absolute;
         transform: translate(-6px, 0);
         margin-top: 16px;
-        left: 235px;
+        left: 227px;
+    }
+
+    .question-accordion {
+        font-size: 16px;
+    }
+
+    .text-mobile {
+        font-size: 40px;
     }
 
 }
